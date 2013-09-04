@@ -29,8 +29,11 @@ header h1 {
 
 nav {
     padding:.5em 20px;
-    background:rgba(238,238,238,0.7);
+    background:rgba(238,238,238,0.7); //opacity
     width:100%;
+    //box-shadow
+    //height: 1em; overflow:hidden;
+    //transition:height 1s;
 }
     nav:hover { height:3em; }
 
