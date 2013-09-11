@@ -1,0 +1,4 @@
+Real-time
+Gif
+Net.art
+Generative site // basically destroying the state of the site everytime it gets visited
