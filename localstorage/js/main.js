@@ -9,7 +9,9 @@
 
 
 var posts = [];
+var iD = [];
 
+//data-myid  in js   cat.dataset.myid =
 /**
  * form action
  *
@@ -42,13 +44,32 @@ $('#draft button').click( function(event){
  *
  */
 
+
 function displayPost(post){
-    
+    	    console.log('hi');
+
     var html = '<article><h2>'+ post.title +'</h2><p>'+ post.content +'</p></article>';
     $('#feed').prepend(html);
+
     
 }
 
+
+
+$('#feed').on('click','article', function () {
+	//alert('blablabla');
+	$(this).toggleClass('toggle').css('color','red').remove();
+	} );
+
+/*
+ {
+	function () = 
+	
+	.toggleClass(".active")
+		
+	
+}
+*/
 
 /**
  * store posts
@@ -99,7 +120,7 @@ function loadPosts(){
 
     // check for posts in storage
     if (localStorage.posts) { 
-
+	    console.log('hi');
         posts = localStorage.posts;
 
         // turn string into an array
