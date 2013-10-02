@@ -9,7 +9,7 @@
 
 
 var posts = [];
-var iD = [];
+//var iD = [];
 
 //data-myid  in js   cat.dataset.myid =
 /**
@@ -26,6 +26,7 @@ $('#draft button').click( function(event){
     var post = {};
     post.title = $('#title').val();
     post.content = $('#content').val();
+    
 
     // add post to posts
     posts.push(post);
@@ -58,8 +59,15 @@ function displayPost(post){
 
 $('#feed').on('click','article', function () {
 	//alert('blablabla');
-	$(this).toggleClass('toggle').css('color','red').remove();
+	$(this).toggleClass('toggle').css('color','red');
 	} );
+
+/* $('#feed').on('click', 'article', function() { // the same as top
+	$('article').removeClass('active');
+	$(this).toggleClass('active');
+
+});
+*/
 
 /*
  {
